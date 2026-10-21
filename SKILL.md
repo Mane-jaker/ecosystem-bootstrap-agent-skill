@@ -45,7 +45,7 @@ graph TD
 
 ## Flujo
 
-Ejecutá los pasos en orden. Los pasos 0 y 1 no modifican nada; el paso 3 pide permiso; solo el 4 y el 5 escriben en disco.
+Ejecutá los pasos en orden. Los pasos 0 y 1 no modifican nada; el paso 3 pide permiso; solo el 4 y el 5 escriben en disco — y el 0, en su versión aditiva, completa archivos de `overview/` que falten sin tocar los existentes.
 
 ### Paso 0 — Short-circuit: el proyecto ya tiene gobernanza
 
@@ -183,7 +183,7 @@ Reglas de este paso:
   ```
   El nombre del directorio debe ser el **nombre completo del repo** (ej. `.skill/web-react-agent-skill/`), nunca un alias corto.
 - Si el usuario no dice nada → **se ignoran**. No instales skills por iniciativa propia.
-- Verificá que cada skill listada exista (mismo check del Paso 2). Las skills queeln README promete pero no están publicadas no se listan.
+- Verificá que cada skill listada exista (mismo check del Paso 2). Las skills que el README del ecosistema promete pero que todavía no están publicadas no se listan.
 - Mencioná también las skills **inline** que ya trae la gobernanza instalada (ej. `flutter-agent-rules` trae `.agents/skills/flutter-clean-arch/` y `.agents/skills/mermaid-diagrams/`): esas no se instalan, ya están.
 
 ## Reglas inviolables
