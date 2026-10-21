@@ -1,0 +1,6 @@
+---
+description: Bootstrap the Agent-Rules-Ecosystem governance into this project - detect the stack, install the matching *-agent-rules core into .agents/ as a submodule, scaffold overview/, and list compatible skills.
+globs: ["pubspec.yaml", "package.json", "go.mod", "Cargo.toml", "pyproject.toml", "build.gradle.kts", "Package.swift", "*.xcodeproj"]
+---
+
+Cuando el usuario arranque un proyecto, pida un paquete de reglas o mencione gobernanza / agent rules / `.agents` / `$boot` / `overview/`, usá la skill `ecosystem-bootstrap-agent-skill` (ver `../SKILL.md`): detecta el stack desde los archivos de este proyecto, verifica qué gobernanzas existen realmente en `Agent-Rules-Ecosystem` antes de recomendar, pregunta antes de instalar, y nunca escribe dentro de `.agents/` ni de `.skill/`.
